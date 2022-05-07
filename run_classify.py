@@ -124,7 +124,6 @@ trainer = Trainer(
 )
 
 
-
 trainer.train()
 # trainer.evaluate()
 import numpy as np
