@@ -1,7 +1,10 @@
 # DocEE-Application
 Leveraging DocEE corpus to implement an online news event extraction system
+
 中文篇章级事件抽取系统应用
-目前支持事件类型集中在灾害类，包括
+
+
+目前支持事件类型有：
 ```
 空难,地震,暴风雪,旱灾,火灾,水灾,矿井坍塌,泥石流,船难,火山爆发,交通事故
 ```
