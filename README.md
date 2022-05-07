@@ -20,6 +20,9 @@ Leveraging DocEE corpus to implement an online news event extraction system
     - python -m pip install datasets
     - python -m pip install sklearn
  ```   
+## checkpoint下载
+https://www.aliyundrive.com/s/Li7GMA91Lkk
+
 ## 事件抽取
 
 ```python
