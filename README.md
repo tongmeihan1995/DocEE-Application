@@ -1,6 +1,10 @@
 # DocEE-Application
 Leveraging DocEE corpus to implement an online news event extraction system
-
+中文篇章级事件抽取系统应用
+目前支持事件类型集中在灾害类，包括
+```
+空难,地震,暴风雪,旱灾,火灾,水灾,矿井坍塌,泥石流,船难,火山爆发,交通事故
+```
 
 # DocEE部署说明书
 ## 环境安装
@@ -19,6 +23,7 @@ Leveraging DocEE corpus to implement an online news event extraction system
     - python predict_classify.txt
     - python predict_EE.py
 ```
+
 ## 数据格式
 输入数据：test.pkl
 ```
