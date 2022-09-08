@@ -57,7 +57,7 @@ def get_sents_and_labels(dataset,num_labels):
     for i in range(1):
         print(sents[i])
         print(labels[i])
-    return sents[:2], labels[:2]
+    return sents, labels
 
 num_labels=len(label2id.keys())
 train_sents, train_labels = get_sents_and_labels(train,num_labels)
