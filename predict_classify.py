@@ -6,7 +6,7 @@ import json
 from transformers import AutoTokenizer
 from sklearn.metrics import accuracy_score,f1_score,precision_score,recall_score
 
-MODEL_NAME="bert-base-chinese"#"model/roberta-base"#"model/distilbert-base-uncased"#"model/albert-base-v2"#"model/bert-base-cased"
+MODEL_NAME="bert-base-uncased"#"model/roberta-base"#"model/distilbert-base-uncased"#"model/albert-base-v2"#"model/bert-base-cased"
 #MODEL_NAME="results/checkpoint-1500"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"#"1,2,3,4,5,6,7,8"
 

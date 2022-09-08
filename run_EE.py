@@ -4,11 +4,14 @@ import torch
 import os
 
 from transformers import BertTokenizerFast, AutoModelForQuestionAnswering
+from transformers import LongformerTokenizerFast, LongformerForQuestionAnswering
 
+tokenizer = LongformerTokenizerFast.from_pretrained("valhalla/longformer-base-4096-finetuned-squadv1")
+model = LongformerForQuestionAnswering.from_pretrained("valhalla/longformer-base-4096-finetuned-squadv1")
 
 #tokenizer = BertTokenizerFast.from_pretrained('dslim/bert-base-NER')
-MODEL_NAME="bert-base-chinese"#"hfl/chinese-bert-wwm-ext"
-tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
+# MODEL_NAME="bert-base-uncased"#"hfl/chinese-bert-wwm-ext"
+# tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5,6,7,8"
 
@@ -71,7 +74,7 @@ class SquadDataset(torch.utils.data.Dataset):
 train_dataset = SquadDataset(train_encodings)
 test_dataset = SquadDataset(test_encodings)
 
-model = AutoModelForQuestionAnswering.from_pretrained("bert-base-chinese")#("bert-base-uncased")
+# model = AutoModelForQuestionAnswering.from_pretrained("bert-base-chinese")#("bert-base-uncased")
 '''
 from torch.utils.data import DataLoader
 from transformers import AdamW

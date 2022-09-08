@@ -7,8 +7,11 @@ from transformers import BertTokenizerFast, AutoModelForQuestionAnswering
 
 
 #tokenizer = BertTokenizerFast.from_pretrained('dslim/bert-base-NER')
-MODEL_NAME="bert-base-chinese"
-tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
+# MODEL_NAME="bert-base-chinese"
+# tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
+from transformers import LongformerTokenizerFast, LongformerForQuestionAnswering
+
+tokenizer = LongformerTokenizerFast.from_pretrained("valhalla/longformer-base-4096-finetuned-squadv1")
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5,6,7,8"
 

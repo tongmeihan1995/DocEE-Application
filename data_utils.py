@@ -4,7 +4,7 @@ from transformers import BertTokenizerFast
 from tqdm import tqdm
 
 INPUT_DATA_PATH="data-0505"
-MODEL_NAME="bert-base-chinese"#"model/clue/roberta_chinese_base/"
+MODEL_NAME="bert-base-uncased"#"model/clue/roberta_chinese_base/"
 tokenizer= BertTokenizerFast.from_pretrained(MODEL_NAME)
 vocab = tokenizer.get_vocab()
 id2vocab = dict(zip(vocab.values(), vocab.keys()))
